@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanay Sreedharan's Digital Portfolio</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/projects.css">
+
+</head>
+
+<body>
+
+
+    <div class="nav">
+        <div class="name"><a href="index.html">Digital Portfolio</a></div>
+        <div class="items">
+            <div class="about"><a href="about.html">About Me</a></div>
+            <div class="projects"><a href="projects.html">Projects</a></div>
+            <div class="journals"><a href="journals.html">Journals</a></div>
+            <div class="resume"><a href="resume.html">Resume</a></div>
+            <div class="git"><a href="https://github.com/stuffysaturn" target="_blank"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="git" class="gitlogo"></a></div>
+        </div>
+    </div>
+
+    <div class="cardHolder first">
+        <div class="card">
+            <div class="cardData">
+                <div class="cardTitle">NASA Hunch Cybersecurity</div>
+                <hr>
+                <div class="cardText">The goal of this project was to design a Reliable, Redundant, and Secure Network
+                    to transport the data, video, telemetry, and voice from the moon's Smart Building to a Control
+                    Center(s) on Earth.
+                    For this we created a trifold presentation, 3 network designs demostrating the possible architecture
+                    to send data to the
+                    moon, a demonstration on how
+                    possible laser communications could work to deliver this data, along with a <a href="https://codermerlin.app/sites/nasacybsec.org/index.html" target="_blank" class="website">website</a> with our
+                    comprehensive write ups to showcase this work.</div>
+            </div>
+            <div class="slides">
+                <div class="buttons">
+                    <div class="left" onclick="plusDivs(-1)">&#10094</div>
+                    <div class="right" onclick="plusDivs(1)">&#10095</div>
+                    <div class="dots">
+                        <span class="dot" onclick="currentDiv(1)"></span>
+                        <span class="dot" onclick="currentDiv(2)"></span>
+                        <span class="dot" onclick="currentDiv(3)"></span>
+                    </div>
+                </div>
+                <img src="photos/nasaweb.png"
+                    alt="" class="mySlides">
+                 <img src="photos/nasa.png"
+                    alt="" class="mySlides">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg"
+                    alt="" class="mySlides">
+
+            </div>
+        </div>
+    </div>
+<hr>
+    <div class="cardHolder">
+        <div class="card">
+            
+            <div class="slides">
+                <div class="buttons">
+                    <div class="left" onclick="plusDivs2(-1)">&#10094</div>
+                    <div class="right" onclick="plusDivs2(1)">&#10095</div>
+                    <div class="dots">
+                        <span class="dot2" onclick="currentDiv2(1)"></span>
+                        <span class="dot2" onclick="currentDiv2(2)"></span>
+                        <span class="dot2" onclick="currentDiv2(3)"></span>
+                    </div>
+                </div>
+                <img src="photos/website.png"
+                    alt="" class="mySlides2">
+                 <img src="photos/robot_cad.png"
+                    alt="" class="mySlides2" style="background-color: whitesmoke;">
+                <img src="photos/website2.png"
+                    alt="" class="mySlides2">
+
+            </div>
+            <div class="cardData">
+                <div class="cardTitle">BEST Robotics Website</div>
+                <hr>
+                <div class="cardText">For this project we were tasked with creating a <a href="https://best58.github.io/incision-decision-website/" target="_blank" class="website">website</a> to represent our robot in 
+                our marketing presentation. The website had to be made in HTML, CSS, and Javascript. We created
+                6 tabs for this website to demostrate all the aspects of our product and demostrate the full potential of our team.
+                Overall our team performed well and we recieved first place for the Best award, the most prestigious
+                award available. 
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="cardHolder">
+        <div class="card">
+            <div class="cardData">
+                <div class="cardTitle">TFT Task Manager</div>
+                <hr>
+                <div class="cardText"> The intended usage of this product was to help members of the non-profit organization
+                    Toys For Texans better manage the delegation of tasks and ensure deadlines are met. It is built
+                    in REACT and uses Flask API. It takes in picture authentication to allow for managers and VPs to 
+                    ensure tasks are completed on time and correctly. This overall allowed for a more streamlined
+                    and efficent running of the organization.
+            </div>
+            </div>
+            <div class="slides">
+                <div class="buttons">
+                    <div class="left" onclick="plusDivs3(-1)">&#10094</div>
+                    <div class="right" onclick="plusDivs3(1)">&#10095</div>
+                    <div class="dots">
+                        <span class="dot3" onclick="currentDiv3(1)"></span>
+                        <span class="dot3" onclick="currentDiv3(2)"></span>
+                        <span class="dot3" onclick="currentDiv3(3)"></span>
+                    </div>
+                </div>
+                <img src="photos/tftweb.png"
+                    alt="" class="mySlides3">
+                 <img src="photos/toysfortexans.png"
+                    alt="" class="mySlides3">
+                <img src="photos/tft.png"
+                    alt="" class="mySlides3">
+
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+
+<script src="js/projects.js"></script>
+
+</html>

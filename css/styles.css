@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #727272;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav {
+    position: relative;
+    z-index: 3 !important;
+    background-color: #464646;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 1rem;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+}
+
+.main {
+    animation: fadeIn 1.5s;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.gitlogo{
+    border-radius: 50em;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 7rem;
+    margin-left: 2rem;
+    font-weight: 700;
+    text-shadow: #5d86bd 5px 8px;
+    letter-spacing: 0.1rem;
+}
+
+.subtitle {
+    font-size: 3rem;
+    margin-left: 2rem;
+    font-weight: 100 !important;
+    text-shadow: #5d86bd 0px 5px;
+}
+
+
+.items {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.items>div {
+    margin: 0;
+    margin-left: 1rem;
+    position: relative;
+}
+
+
+.items>div::after, .name::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .25s ease-in-out;
+}
+
+.items>div:hover::after, .name:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.name {
+    position: relative;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+.button {
+    margin-top: 2rem;
+}
+
+.button>a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    padding: 1rem;
+    background-color: #81ace6;
+    transition: 0.3s ease-in-out;
+    border-radius: 0.5rem;
+}
+
+.button>a:hover {
+    background-color: #5d86bd;
+}
+
+.resumelink {
+    text-decoration: underline;
+}

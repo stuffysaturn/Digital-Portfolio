@@ -1,0 +1,77 @@
+body{
+    overflow: hidden;
+}
+
+
+
+.info{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+}
+
+.data{
+    animation: fadeIn 1.5s;
+    color: white;
+    width: 60vw;
+    padding-left: 2rem;
+}
+
+.header{
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.text  {
+    font-size: 1.8rem;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.img{
+    width: 35vw;
+    text-align: center;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+}
+
+.me{
+    animation: fadeInAnimation 1.5s;
+    width: 25vw;
+    height: 35vw;
+    border-radius: 3rem;
+    box-shadow: 0.75rem 0.75rem #81ace6;
+    
+}
+
+.spacer{
+    text-align: center;
+    font-size: 3rem;
+    color:#81ace6;
+}
+

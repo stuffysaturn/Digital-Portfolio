@@ -1,0 +1,99 @@
+.list {
+    margin: 3rem;
+}
+
+.tabletitle {
+    color: white;
+    font-size: 7rem;
+    font-weight: 700;
+    text-shadow: #5d86bd 5px 8px;
+    margin-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;
+    transition: .1s ease-in;
+}
+
+.row:hover {
+    color: antiquewhite;
+    transform: scale(1.01);
+}
+
+.number {
+    position: absolute;
+    left: 35%;
+}
+
+.date {
+    margin-left: auto;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #81ace6;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.containerholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.container {
+    width: 50%;
+    padding: 2.5rem;
+    color: white;
+    background-color: #5d86bd;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 5rem;
+}
+
+.journaltitle {
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 0.75rem;
+}
+
+.back{
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    transition: 0.1s ease-in-out;
+}
+
+.back:hover{
+    outline: 2px solid white;
+    transform: scale(1.25);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
