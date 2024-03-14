@@ -1,10 +1,12 @@
 var slideIndex1 = 1
 var slideIndex2 = 1
 var slideIndex3 = 1
+var slideIndex4 = 4
 
 showImg(slideIndex1)
 showImg2(slideIndex2)
 showImg3(slideIndex3)
+showImg4(slideIndex4)
 
 function plusDivs(n) {
     showImg(slideIndex1 += n);
@@ -88,4 +90,32 @@ function showImg3(n){
     }
     slideArr[slideIndex3-1].style.display = "block"
     dots[slideIndex3-1].className += " dot-active3"
+}
+
+function plusDivs4(n) {
+    showImg4(slideIndex4 += n);
+  }
+  
+function currentDiv4(n) {
+    showImg4(slideIndex4 = n);
+}
+  
+
+function showImg4(n){
+    var slideArr = document.getElementsByClassName("mySlides4")
+    var dots = document.getElementsByClassName("dot4")
+    if(n > slideArr.length){
+        slideIndex4 = 1
+    }
+    if(n < 1){
+        slideIndex4 = slideArr.length
+    }
+    for(i = 0; i < slideArr.length; i++){
+        slideArr[i].style.display = "none"
+    }
+    for(i = 0; i < dots.length; i++){
+        dots[i].className = dots[i].className.replace(" dot-active4", " dot4")
+    }
+    slideArr[slideIndex4-1].style.display = "block"
+    dots[slideIndex4-1].className += " dot-active4"
 }

@@ -47,11 +47,18 @@ html{
 }
 
 
-.mySlides, .mySlides2, .mySlides3 {
+.mySlides, .mySlides3 {
     display: none;
     width: 100%;
     height: 100%;
     box-shadow: 0.75rem 0.75rem #5d86bd;
+}
+
+.mySlides2, .mySlides4 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    box-shadow: -0.75rem 0.75rem #5d86bd;
 }
 
 .buttons{
@@ -99,7 +106,7 @@ html{
     letter-spacing: 1rem;
     cursor: default;
 }
-.dot-active, .dot-active2, .dot-active3{
+.dot-active, .dot-active2, .dot-active3, .dot-active4{
     cursor: pointer;
     display: inline-block;
     width: 1rem;
@@ -108,7 +115,7 @@ html{
     border-radius: 50em;
 }
 
-.dot, .dot2, .dot3{
+.dot, .dot2, .dot3, .dot4{
     cursor: pointer;
     display: inline-block;
     width: 1rem;
@@ -117,7 +124,7 @@ html{
     border-radius: 50em;
 }
 
-.dot:hover, .dot2:hover, .dot3:hover{
+.dot:hover, .dot2:hover, .dot3:hover, .dot4:hover{
     transition: 0.1s ease-in;
     background-color: #5d86bd;
 }
