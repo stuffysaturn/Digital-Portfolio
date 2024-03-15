@@ -13,13 +13,28 @@
 
 <body>
 
+    <div class="menuback hide" id="back">
+        <div class="menulist">
+            <div class="menutitle">
+                <div class="dig"><a href="index.html">Digital Portfolio</a></div>
+                <div class="close" onclick="closeMenu()">╳</div>
+            </div>
+            <div class="menuitems">
+                <div class="mabout"><a href="about.html">About Me</a></div>
+                <div class="mprojects"><a href="projects.html">Projects</a></div>
+                <div class="mjournals"><a href="journals.html">Journals</a></div>
+                <div class="mresume"><a href="resume/resume.pdf" target="_blank">Resume</a></div>
+            </div>
+        </div>
+    </div>
+
     <div class="info">
     <div class="data">
         <div class="header">
             About Me
         </div>
         <div class="text">
-            My name is Tanay Sreedharan and I am a junior at Allen High School. I was born in Bloomnington, Illinois as an only child. Some of my hobbies include badminton,
+            My name is Tanay Sreedharan and I am a junior at Allen High School. I was born in Bloomington, Illinois as an only child. Some of my hobbies include badminton,
             piano, swimming, and chess. I also have a love for coding and robotics and am a part of FRC team 5417. Along with this I hope to major in CS in college.
         </div>
         <div class="spacer">
@@ -29,7 +44,7 @@
             Why make a Digital Portfolio?
         </div>
         <div class="text">
-            This portfolio helps me keep track of my work and serves as a timeline of my groth through CS-I, II, & III.
+            This portfolio helps me keep track of my work and serves as a timeline of my learning through CS-I, II, & III.
             It will be a clear demonstration of my growth throughout my years in high school. Along with this it 
             will be a clear affirmation of my skills in computer science.
         </div>
@@ -40,7 +55,7 @@
             Resume
         </div>
         <div class="text">
-            If you would like to find a more comprhensive resume click <a href="resume/resume.pdf" class="resumelink" target="_blank">here</a>
+            If you would like to find a more comprehensive resume click <a href="resume/resume.pdf" class="resumelink" target="_blank">here</a>
         </div>
     </div>
 
@@ -56,10 +71,15 @@
             <div class="projects"><a href="projects.html">Projects</a></div>
             <div class="journals"><a href="journals.html">Journals</a></div>
             <div class="resume"><a href="resume/resume.pdf" target="_blank">Resume</a></div>
-            <div class="git"><a href="https://github.com/stuffysaturn" target="_blank"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="git" class="gitlogo"></a></div>
+            <div class="git"><a href="https://github.com/stuffysaturn" target="_blank"><img
+                        src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="git"
+                        class="gitlogo"></a></div>
+        </div>
+        <div class="menubutton" onclick="showMenu()">
+            ☰
         </div>
     </div>
 
 </body>
-
+<script src="js/menu.js"></script>
 </html>

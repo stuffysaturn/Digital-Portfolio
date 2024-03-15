@@ -13,6 +13,20 @@
 
 <body>
 
+    <div class="menuback hide" id="back">
+        <div class="menulist">
+            <div class="menutitle">
+                <div class="dig"><a href="index.html">Digital Portfolio</a></div>
+                <div class="close" onclick="closeMenu()">╳</div>
+            </div>
+            <div class="menuitems">
+                <div class="mabout"><a href="about.html">About Me</a></div>
+                <div class="mprojects"><a href="projects.html">Projects</a></div>
+                <div class="mjournals"><a href="journals.html">Journals</a></div>
+                <div class="mresume"><a href="resume/resume.pdf" target="_blank">Resume</a></div>
+            </div>
+        </div>
+    </div>
 
     <div class="nav">
         <div class="name"><a href="index.html">Digital Portfolio</a></div>
@@ -21,7 +35,12 @@
             <div class="projects"><a href="projects.html">Projects</a></div>
             <div class="journals"><a href="journals.html">Journals</a></div>
             <div class="resume"><a href="resume/resume.pdf" target="_blank">Resume</a></div>
-            <div class="git"><a href="https://github.com/stuffysaturn" target="_blank"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="git" class="gitlogo"></a></div>
+            <div class="git"><a href="https://github.com/stuffysaturn" target="_blank"><img
+                        src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="git"
+                        class="gitlogo"></a></div>
+        </div>
+        <div class="menubutton" onclick="showMenu()">
+            ☰
         </div>
     </div>
 
@@ -33,7 +52,7 @@
                 <div class="cardText">The goal of this project was to design a Reliable, Redundant, and Secure Network
                     to transport the data, video, telemetry, and voice from the moon's Smart Building to a Control
                     Center(s) on Earth.
-                    For this we created a trifold presentation, 3 network designs demostrating the possible architecture
+                    For this we created a trifold presentation, 3 network designs demonstrating the possible architecture
                     to send data to the
                     moon, a demonstration on how
                     possible laser communications could work to deliver this data, along with a <a href="https://codermerlin.app/sites/nasacybsec.org/index.html" target="_blank" class="website">website</a> with our
@@ -86,8 +105,8 @@
                 <hr>
                 <div class="cardText">For this project we were tasked with creating a <a href="https://best58.github.io/incision-decision-website/" target="_blank" class="website">website</a> to represent our robot in 
                 our marketing presentation. The website had to be made in HTML, CSS, and Javascript. We created
-                6 tabs for this website to demostrate all the aspects of our product and demostrate the full potential of our team.
-                Overall our team performed well and we recieved first place for the Best award, the most prestigious
+                6 tabs for this website to demonstrate all the aspects of our product and the full potential of our team.
+                Overall our team performed well and we received first place for the Best award, the most prestigious
                 award available. 
             </div>
             </div>
@@ -100,7 +119,7 @@
                 <div class="cardTitle">FEDA Education Website</div>
                 <hr>
                 <div class="cardText"> I worked to create a <a href="https://fedaeducation.org/" target="_blank" class="website">website</a> for the non profit organization FEDA
-                    through the usage of the application Wordpress. The organization works to improve finacial literacy
+                    through the usage of the application Wordpress. The organization works to improve financial literacy
                     among College and High School level students. It is currently partnered with the University of Texas at Dallas.
                     With them the website is constantly being updated with new financial tips and advice to help those in need.
             </div>
@@ -167,5 +186,5 @@
 </body>
 
 <script src="js/projects.js"></script>
-
+<script src="js/menu.js"></script>
 </html>

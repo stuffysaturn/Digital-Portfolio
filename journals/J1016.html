@@ -12,15 +12,33 @@
 </head>
 
 <body>
-
+    <div class="menuback hide" id="back">
+        <div class="menulist">
+            <div class="menutitle">
+                <div class="dig"><a href="index.html">Digital Portfolio</a></div>
+                <div class="close" onclick="closeMenu()">╳</div>
+            </div>
+            <div class="menuitems">
+                <div class="mabout"><a href="../about.html">About Me</a></div>
+                <div class="mprojects"><a href="../projects.html">Projects</a></div>
+                <div class="mjournals"><a href="../journals.html">Journals</a></div>
+                <div class="mresume"><a href="../resume/resume.pdf" target="_blank">Resume</a></div>
+            </div>
+        </div>
+    </div>
     <div class="nav">
-        <div class="name"><a href="../index.html">Digital Portfolio</a></div>
+        <div class="name"><a href="index.html">Digital Portfolio</a></div>
         <div class="items">
             <div class="about"><a href="../about.html">About Me</a></div>
             <div class="projects"><a href="../projects.html">Projects</a></div>
             <div class="journals"><a href="../journals.html">Journals</a></div>
             <div class="resume"><a href="../resume/resume.pdf" target="_blank">Resume</a></div>
-            <div class="git"><a href="https://github.com/stuffysaturn" target="_blank"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="git" class="gitlogo"></a></div>
+            <div class="git"><a href="https://github.com/stuffysaturn" target="_blank"><img
+                        src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="git"
+                        class="gitlogo"></a></div>
+        </div>
+        <div class="menubutton" onclick="showMenu()">
+            ☰
         </div>
     </div>
     <div class="containerholder">
@@ -59,6 +77,6 @@
         </div>
     </div>
 </body>
-
+<script src="../js/menu.js"></script>
 
 </html>

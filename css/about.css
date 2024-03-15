@@ -1,32 +1,22 @@
-body{
-    overflow: hidden;
-}
-
-
-
 .info{
     position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin-top: 15vh;
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(100%);
     }
     100% {
         opacity: 1;
-        transform: translateY(0%);
     }
 
 }
 
 .data{
-    animation: fadeIn 1.5s;
+    animation: fadeIn .75s;
     color: white;
     width: 60vw;
     padding-left: 2rem;
@@ -34,13 +24,13 @@ body{
 
 .header{
     margin-bottom: 1rem;
-    font-size: 3.5rem;
+    font-size: 3.25vw;
     font-weight: 600;
     text-shadow: #5d86bd 2px 4px;
 }
 
 .text  {
-    font-size: 1.8rem;
+    font-size: 1.5vw;
     font-family: "PT Sans Narrow", sans-serif;
 }
 
@@ -52,17 +42,15 @@ body{
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
-        transform: translateX(100%);
     }
     100% {
         opacity: 1;
-        transform: translateX(0%);
     }
 
 }
 
 .me{
-    animation: fadeInAnimation 1.5s;
+    animation: fadeInAnimation .75s;
     width: 25vw;
     height: 35vw;
     border-radius: 3rem;
@@ -76,3 +64,36 @@ body{
     color:#81ace6;
 }
 
+@media (max-width: 1000px) {
+
+    .info{
+        flex-direction: column;
+        margin-top: 11vh;
+        align-items: center;
+        width: 100vw;
+    }
+    .data{
+        width: 80vw;
+        padding: 0;
+    }
+
+    .header{
+        font-size: 10vw;
+    }
+
+    .text{
+        font-size: 5vw;
+    }
+
+    .img{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        width: 80vw;
+    }
+
+    .me{
+        width: 80vw;
+        height: 50vh;
+    }
+
+}

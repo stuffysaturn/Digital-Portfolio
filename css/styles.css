@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: sans-serif;
     background-color: #727272;
-    
+    overflow-x: hidden;
 }
 
 a {
@@ -19,8 +19,11 @@ a {
     display: flex;
     flex-direction: row;
     color: white;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     align-items: center;
+    max-width: 100vw;
+    min-width: 100vw;
 }
 
 @keyframes fadeIn {
@@ -28,6 +31,7 @@ a {
         opacity: 0;
         transform: translateY(100%);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0%);
@@ -47,25 +51,23 @@ a {
     height: 100vh;
 }
 
-.gitlogo{
+.gitlogo {
     border-radius: 50em;
     width: 1.5rem;
     cursor: pointer;
 }
 
 .title {
-    font-size: 7rem;
-    margin-left: 2rem;
+    font-size: 6vw;
     font-weight: 700;
-    text-shadow: #5d86bd 5px 8px;
+    text-shadow: #5d86bd .05em .075em;
     letter-spacing: 0.1rem;
 }
 
 .subtitle {
-    font-size: 3rem;
-    margin-left: 2rem;
+    font-size: 2.5vw;
     font-weight: 100 !important;
-    text-shadow: #5d86bd 0px 5px;
+    text-shadow: #5d86bd 0rem .2rem;
 }
 
 
@@ -74,7 +76,7 @@ a {
     display: flex;
     flex-direction: row;
     margin-left: auto;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .items>div {
@@ -84,7 +86,8 @@ a {
 }
 
 
-.items>div::after, .name::after {
+.items>div::after,
+.name::after {
     content: '';
     position: absolute;
     left: 0;
@@ -97,14 +100,19 @@ a {
     transition: transform .25s ease-in-out;
 }
 
-.items>div:hover::after, .name:hover::after {
+.menulist{
+    display: none;
+}
+
+.items>div:hover::after,
+.name:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
 
 .name {
     position: relative;
-    font-size: 2rem;
+    font-size: 2vw;
     margin-left: 1rem;
     margin-right: auto;
 }
@@ -115,7 +123,7 @@ a {
 
 .button>a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.3vw;
     color: white;
     padding: 1rem;
     background-color: #81ace6;
@@ -129,4 +137,125 @@ a {
 
 .resumelink {
     text-decoration: underline;
+}
+
+.menubutton {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    @keyframes fadeIns {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+        0% {
+            transform: translateX(100%);
+        }
+    
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .menulist {
+        animation: fadeIns .75s ease-in-out;
+    }
+
+    .menuback {
+        position: absolute;
+        z-index: 10;
+        width: 100vw;
+        height: 100vh;
+        background-color: #0000007c;
+        overflow: hidden;
+    }
+
+    .menubutton {
+        display: block;
+        font-size: 5vw;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    .items {
+        display: none;
+    }
+
+    .title {
+        font-size: 10vw;
+        font-weight: 700;
+        text-shadow: #5d86bd .05em .1em;
+        letter-spacing: 0.1rem;
+    }
+
+    .subtitle {
+        font-size: 5vw;
+        font-weight: 100 !important;
+        text-shadow: #5d86bd 0rem .2rem;
+    }
+
+    .name {
+        position: relative;
+        font-size: 5vw;
+        margin-left: 1rem;
+        margin-right: auto;
+    }
+
+    .button {
+        margin-top: 2vh;
+    }
+
+    .button>a {
+        text-decoration: none;
+        font-size: 3vw;
+        color: white;
+        padding: 1.35vh;
+        background-color: #81ace6;
+        border-radius: 0.35rem;
+    }
+
+    .menulist {
+        float: right;
+        background-color: #727272;
+        width: fit-content;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 6rem 0rem 2rem;
+    }
+
+    .menutitle {
+        font-size: 7vw;
+        color: white;
+        font-weight: 600;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .menuitems {
+        font-size: 6vw;
+    }
+
+    .close {
+        position: absolute;
+        font-size: 4.5vw;
+        padding-left: 100%;
+        margin-left: 3rem;
+    }
+
+    .menuitems>div {
+        margin-bottom: 3vh;
+    }
+    .dig{
+        z-index: 1;
+    }
 }

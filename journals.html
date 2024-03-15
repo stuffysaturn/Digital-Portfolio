@@ -13,6 +13,21 @@
 
 <body>
 
+    <div class="menuback hide" id="back">
+        <div class="menulist">
+            <div class="menutitle">
+                <div class="dig"><a href="index.html">Digital Portfolio</a></div>
+                <div class="close" onclick="closeMenu()">╳</div>
+            </div>
+            <div class="menuitems">
+                <div class="mabout"><a href="about.html">About Me</a></div>
+                <div class="mprojects"><a href="projects.html">Projects</a></div>
+                <div class="mjournals"><a href="journals.html">Journals</a></div>
+                <div class="mresume"><a href="resume/resume.pdf" target="_blank">Resume</a></div>
+            </div>
+        </div>
+    </div>
+
     <div class="nav">
         <div class="name"><a href="index.html">Digital Portfolio</a></div>
         <div class="items">
@@ -20,7 +35,12 @@
             <div class="projects"><a href="projects.html">Projects</a></div>
             <div class="journals"><a href="journals.html">Journals</a></div>
             <div class="resume"><a href="resume/resume.pdf" target="_blank">Resume</a></div>
-            <div class="git"><a href="https://github.com/stuffysaturn" target="_blank"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="git" class="gitlogo"></a></div>
+            <div class="git"><a href="https://github.com/stuffysaturn" target="_blank"><img
+                        src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="git"
+                        class="gitlogo"></a></div>
+        </div>
+        <div class="menubutton" onclick="showMenu()">
+            ☰
         </div>
     </div>
 
@@ -46,7 +66,7 @@
             <hr>
             <a href="journals/J1012.html">
                 <div class="row">
-                    <div class="item">Alternative Base Addition</div>
+                    <div class="item">Base Addition</div>
                     <div class="number">J1012</div>
                     <div class="date">September 8, 2022</div>
                 </div>
@@ -86,7 +106,7 @@
             <hr>
             <a href="journals/J1151.html">
                 <div class="row">
-                    <div class="item">Conditional and Flow Chart</div>
+                    <div class="item">Flow Charts</div>
                     <div class="number">J1151</div>
                     <div class="date">January 20, 2023</div>
                 </div>
@@ -113,6 +133,6 @@
 
 
 </body>
-
+<script src="js/menu.js"></script>
 
 </html>
