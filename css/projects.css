@@ -21,11 +21,18 @@
     margin: 2rem;
 }
 
-.cardTitle {
+.cardTitle1 {
     color: white;
     font-size:3.75vw;
     font-weight: 700;
     text-shadow: #5d86bd 4px 5px;
+}
+
+.cardTitle {
+    color: white;
+    font-size:3.75vw;
+    font-weight: 700;
+    text-shadow: #5d86bd -4px 5px;
 }
 
 .cardText {
@@ -154,9 +161,14 @@ hr {
         margin-bottom: 5vh;
     }
 
-    .cardTitle {
+    .cardTitle1 {
         font-size:11vw;
         text-shadow: #5d86bd 4px 5px;
+    }
+
+    .cardTitle {
+        font-size:11vw;
+        text-shadow: #5d86bd -4px 5px;
     }
     
     .cardText {
